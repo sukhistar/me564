@@ -2,8 +2,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Sukhjit Kaur
+# ME564 HW 4
+
+# 4-2.
+
 # Set random seed for reproducibility
-np.random.seed(0)
+# np.random.seed(0)
 
 # Constants
 dt = 0.5  # Time step
@@ -28,7 +33,7 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# (b) Define a function for trapezoidal integration
+# (b) Define function for trapezoidal integration
 def trapezoidal_integration(data, dt):
     """Calculate the cumulative trapezoidal integral of a data vector."""
     integral = np.zeros_like(data)
@@ -74,12 +79,12 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# (f) Re-run this code a few times and plot for different instances
-# This can be done by putting the above parts in a loop or function and calling it multiple times.
+# (f) Re-run this code a few times and provide plots for different instances
+# See attached plot outputs 
 
 # (g) Discussion
 # The numerically calculated position vectors show noticeable differences when noise is added.
 # Without noise, the position closely follows the true analytical position, as expected.
 # However, with noise, the position diverges more significantly from the true position.
-# This highlights the impact of measurement noise on numerical integration, where errors can accumulate
+# This shows the impact of noise on numerical integration - small errors can accumulate
 # over time, leading to increasingly inaccurate results.
